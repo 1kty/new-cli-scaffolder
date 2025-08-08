@@ -77,6 +77,6 @@ pyenv virtualenv "$PY_CHOSEN" "$ENV_NAME" || {
 pyenv local "$PROJECT_NAME-env"
 
 # Ensure pip, wheel are up-to-date, then install tools
-log "Installing wheel, flake8, black..."
+log "Installing pip packages..."
 pip install --upgrade pip wheel
-pip install flake8 black
+pip install ruff
